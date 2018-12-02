@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Info Page</title>
+  </head>
+  <body>
+    
+      <h1>ABCD</h1>
+      <p>{{ vtitle }}</p>
+      <p>{{ vdescription }}</p>
+      <iframe width="460" height="280" src="{{ best_url }}" frameborder="0" allowfullscreen></iframe>
+
+      <form action="/download" method="POST" name="" id="download_page">
+        <input id="slug" type="text" name= "pval" value="{{ vurl }}" autocomplete="off" style="display:none"/>
+        <input type="text" name = "pext" value="{{ vext }}" autocomplete="off" style="display:none"/>
+        <input type="submit" value="Download">
+      </form>
+      
+  </body>
+</html>

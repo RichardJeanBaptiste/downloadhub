@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"></link>
+    <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  </head>
+   <body>
+
+    <script>
+      function valRed() {
+        var val = document.getElementById('slug').value;
+        var regExp = /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+        var match = val.match(regExp);
+        val = match[2];
+        document.getElementById('action_page').action = '/v/' + val;
+      }
+    </script>
+     <div id="mainForm">
+      <h1>Mp3/Mp4 Converter</h1>
+      <form action='/v/' method="POST" id="action_page">
+        <input id="slug" type="text" name= "val" placeholder="Url" autocomplete="off"/>
+        <select id="ext" name="ext">
+          <option>Mp4</option>
+          <option>Mp3</option>
+        </select>
+        <input id="subm" type="submit" value="Download Video" onclick="valRed();"/>
+      </form>
+     </div>
+
+    
+
+  </body>
+</html>
