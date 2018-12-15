@@ -1,4 +1,5 @@
-from flask import Flask, render_template, url_for, redirect, request, jsonify 
+from flask import Flask, render_template, url_for, redirect, request, jsonify
+from flask_socketio import SocketIO, send
 import pafy
 import os
 
@@ -9,9 +10,11 @@ desktop = os.path.expanduser("~/Desktop")
 
 
 
+
 @app.route("/")
 def index():
     return render_template("index.html")
+
 
 
 @app.route("/v/<yid>", methods=['GET', 'POST'])
@@ -79,3 +82,4 @@ def downloading():
 
 if __name__ == "__main__":
     app.run(debug=False, port=3000)
+    

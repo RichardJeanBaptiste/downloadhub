@@ -3,19 +3,41 @@
   <head>
     <meta charset="UTF-8">
     <title>Info Page</title>
+    <link rel="icon" href="\static\favicon-info.ico">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main19.css') }}"></link>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
   </head>
   <body>
     
-      <h1>ABCD</h1>
-      <p>{{ vtitle }}</p>
-      <p>{{ vdescription }}</p>
-      <iframe width="460" height="280" src="{{ best_url }}" frameborder="0" allowfullscreen></iframe>
+      
+      <h2 id="vtitle" style="text-align: center;margin-top: 4.6%;">{{ vtitle }}</h2>
 
-      <form action="/download" method="POST" name="" id="download_page">
-        <input id="slug" type="text" name= "pval" value="{{ vurl }}" autocomplete="off" style="display:none"/>
-        <input type="text" name = "pext" value="{{ vext }}" autocomplete="off" style="display:none"/>
-        <input type="submit" value="Download">
-      </form>
+      
+    <div id="frame" style="margin-top: 5%; margin-left: 3%;">
+      <iframe width="569" height="280" src="{{ best_url }}" frameborder="0" allowfullscreen id="frame" style="margin-top:3%;"></iframe>
+    </div>
+    
+    <form action="/download" method="POST" name="" id="download_page">
+      <input id="slug" type="text" name= "pval" value="{{ vurl }}" autocomplete="off" style="display:none"/>
+      <input type="text" name = "pext" value="{{ vext }}" autocomplete="off" style="display:none"/>
+      <input type="submit" value="Download" class="btn btn-primary button-width">
+    </form>
+
+    <div style="margin-top: -26%; margin-left: 54%; font-size: 30px; color:rgb(33, 160, 133);">
+      <p>Hit the Download button to get the video straight to your desktop.</p>
+      <p>Or right click the video and hit "Save as" to download to a different folder.</p>
+    </div>
+
+
+    <script type="text/javascript" charset="utf-8">
+       
+    </script>
       
   </body>
 </html>

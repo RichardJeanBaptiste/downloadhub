@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(221,205,19);
+}
+
+h1{
+    font-family: 'Fjalla One', sans-serif;
+    color:rgb(33, 160, 133);
+    text-align: center;
+}
+
+
+#mainForm{
+   margin-left: 41%;
+   margin-top: 9%;
+}
+
+#slug{
+    width: 28%;
+}
+
+#action_page{
+    text-align: center;
+    margin-top: 4%;
+}
+
+
+#desc{
+    width: 572px;
+    text-align:left;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin-top: 56%;
+    margin-left:0.4%;
+    font-size: 14px;
+}
+
+
+
+#vtitle {
+    font-family: 'Fjalla One', sans-serif;
+    color:rgb(33, 160, 133); 
+}
+
+.button-width{
+    width: 559px;
+    margin-left: 33%;
+    margin-top: 4.5%;
+}
+

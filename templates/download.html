@@ -3,11 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <title>Thanks</title>
+    <link rel="icon" href="\static\favicon-check-square-o.ico">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main19.css') }}"></link>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
   </head>
   <body>
-      <p>Thanks For Downloading!</p>
+      <h1 style="margin-top: 16%;">Thanks For Downloading!</h1>
 
-      <button onclick="homepage()">Back to homepage</button>
+      <button style="margin-top: 2%; margin-left: 45%;" class="btn btn-primary" onclick="homepage()">Back to homepage</button>
 
       <script>
           function homepage(){
