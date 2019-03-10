@@ -1,14 +1,12 @@
 from flask import Flask, render_template, url_for, redirect, request, jsonify
-from flask_socketio import SocketIO, send
+#from flask_socketio import SocketIO, send
 import pafy
 import os
 
 
 app = Flask(__name__)
 
-desktop = os.path.expanduser("~/Desktop")
-
-
+desktop = os.path.expanduser("~/Downloads")
 
 
 @app.route("/")
