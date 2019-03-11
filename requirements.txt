@@ -17,7 +17,6 @@ postgres==2.2.2
 psycopg2-binary==2.7.7
 pycrypto==2.6.1
 pycurl==7.43.0.1
-pygobject==3.26.1
 pyliblzma==0.5.3
 pysqlite==1.0.1
 python-engineio==3.4.3
