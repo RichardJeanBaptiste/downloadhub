@@ -7,7 +7,7 @@ The site is live here - https://downloadhub-heroku.herokuapp.com/
 
 # Prerequisites
 
-'''
+```
 pip install flask
 pip install pafy
-'''
+```
